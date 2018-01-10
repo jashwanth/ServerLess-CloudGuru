@@ -3,6 +3,12 @@ import os
 from contextlib import closing
 from boto3.dynamodb.conditions import Key, Attr
 
+
+# add the following as environment variables 
+#DB_TABLE_NAME posts
+#BUCKET_NAME acloudguru-polly-mp3s-jashwanth
+
+
 def lambda_handler(event, context):
 
     postId = event["Records"][0]["Sns"]["Message"]
