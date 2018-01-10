@@ -2,6 +2,7 @@ import boto3
 import os
 from boto3.dynamodb.conditions import Key, Attr
 
+#environment variables DB_TABLE_NAME - posts
 def lambda_handler(event, context):
     
     postId = event["postId"]
