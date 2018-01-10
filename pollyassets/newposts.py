@@ -2,6 +2,10 @@ import boto3
 import os
 import uuid
 
+#environment variables : 
+#SNS_TOPIC arn:aws:sns:us-east-1:581964655791:new_posts
+#DB_TABLE_NAME posts
+
 def lambda_handler(event, context):
     
     recordId = str(uuid.uuid4())
